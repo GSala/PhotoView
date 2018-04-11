@@ -207,7 +207,7 @@ public class PhotoViewAttacher implements View.OnTouchListener,
                 }
 
                 if (displayRect != null) {
-
+                    displayRect.offset(mImageView.getPaddingLeft(), mImageView.getPaddingTop());
                     // Check to see if the user tapped on the photo
                     if (displayRect.contains(x, y)) {
 
